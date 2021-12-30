@@ -44,6 +44,7 @@ print(rayOrigin);
 				}
 			}
 
+			
 			if(swipedDirection < 0)
 			{	
 				targetToMove.RotateAround(pivotObj.position, Vector3.back,Time.deltaTime * angle);
