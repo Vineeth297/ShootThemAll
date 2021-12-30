@@ -1,26 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-
+	
 	[SerializeField]private float xForce;
 	[SerializeField]private float xSpeed;
-
+	
 	public Transform targetToMove;
 	public Transform pivotObj;
 
+	RaycastHit hit;
+	
+	public int totalBounces = 3;
+	public float lineOffset = 0.01f;
 	public float angle = 1f;
+	
+	
 	void Update()
 	{
-		float swipe = Input.GetAxis("Mouse X");
+
+		Vector3 direction = targetToMove.up;
+		Vector3 rayOrigin = targetToMove.position + lineOffset * direction;
+print(rayOrigin);
+		float swipedDirection = Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
+		
+		Debug.DrawLine(rayOrigin,hit.point);
 		
 		if (Input.GetMouseButton(0))
 		{
-			print(swipe);
-			targetToMove.RotateAround(pivotObj.position, Vector3.right,Time.deltaTime * angle);
+			if (swipedDirection > 0)
+			{
+				targetToMove.RotateAround(pivotObj.position, Vector3.forward, Time.deltaTime * angle);
+				for (int i = 1; i <= totalBounces; i++)
+				{
+					Physics.Raycast(rayOrigin, direction,out hit,Mathf.Infinity);
+
+					direction = Vector2.Reflect(direction.normalized, hit.normal);
+					rayOrigin = hit.point + lineOffset * direction;
+				}
+			}
+
+			if(swipedDirection < 0)
+			{	
+				targetToMove.RotateAround(pivotObj.position, Vector3.back,Time.deltaTime * angle);
+				for (int i = 1; i <= totalBounces; i++)
+				{
+					Physics.Raycast(rayOrigin, direction,out hit,Mathf.Infinity);
+					
+					direction = Vector2.Reflect(direction.normalized, hit.normal);
+					rayOrigin = hit.point + lineOffset * direction;
+				}
+			}
+				
 		}
 		
 	#if UNITY_EDITOR
