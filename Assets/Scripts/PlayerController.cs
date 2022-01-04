@@ -109,12 +109,26 @@ public class PlayerController : MonoBehaviour
 	{
 		GameObject bullet = Instantiate(projectile, bulletSpawnPosition);
 		bullet.transform.position = targetToMove.position;
+		
 		for (int i = 1; i < _lineRenderer.positionCount; i++)
 		{
 			bullet.transform.DOMove(_lineRenderer.GetPosition(i),0.6f).SetEase(Ease.Linear);
 			yield return new WaitForSeconds(0.6f);
 		}
 		
+		if (bullet == null) yield break;
+		
+		if(Vector3.Distance(bullet.transform.position,pathPoints[pathPoints.Count - 1]) < 0.01f)
+			Destroy(bullet);
+		
 		pathPoints.Clear();
+	}
+	
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Bullet"))
+		{
+			gameObject.SetActive(false);
+		}
 	}
 }

@@ -19,11 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2aa04f9-3efe-4195-ad7c-11d90a89517e" name="Default Changelist" comment="03.01.22&#10;Done with laser Function&#10;Need to work on endPoint of the laser">
+    <list default="true" id="b2aa04f9-3efe-4195-ad7c-11d90a89517e" name="Default Changelist" comment="04.01.22&#10;Lazer Functionality Updated and finalized">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EnemyFunction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EnemyFunction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EnemyFunction.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +40,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/EnemyFunction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/trial.cs" />
-        <option value="$PROJECT_DIR$/Assets/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/trial.cs" />
         <option value="$PROJECT_DIR$/Assets/ShootingControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShootLaser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserBeam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyFunction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFunction.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +113,8 @@
     <MESSAGE value="30.12.21" />
     <MESSAGE value="31.12.21" />
     <MESSAGE value="03.01.22&#10;Done with laser Function&#10;Need to work on endPoint of the laser" />
-    <option name="LAST_COMMIT_MESSAGE" value="03.01.22&#10;Done with laser Function&#10;Need to work on endPoint of the laser" />
+    <MESSAGE value="04.01.22&#10;Lazer Functionality Updated and finalized" />
+    <option name="LAST_COMMIT_MESSAGE" value="04.01.22&#10;Lazer Functionality Updated and finalized" />
   </component>
   <component name="WindowStateProjectService">
     <state x="803" y="240" key="RollbackChangesDialog" timestamp="1641272927279">

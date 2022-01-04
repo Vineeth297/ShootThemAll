@@ -8,6 +8,7 @@ TagManager:
   - Reflectables
   - Mirror
   - Bullet
+  - BoundingBox
   layers:
   - Default
   - TransparentFX
