@@ -19,16 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2aa04f9-3efe-4195-ad7c-11d90a89517e" name="Default Changelist" comment="04.01.22&#10;Lazer Functionality Updated and finalized">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="b2aa04f9-3efe-4195-ad7c-11d90a89517e" name="Default Changelist" comment="changes ongoing">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shoot Them All/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyFunction.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,8 @@
     <MESSAGE value="31.12.21" />
     <MESSAGE value="03.01.22&#10;Done with laser Function&#10;Need to work on endPoint of the laser" />
     <MESSAGE value="04.01.22&#10;Lazer Functionality Updated and finalized" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.01.22&#10;Lazer Functionality Updated and finalized" />
+    <MESSAGE value="changes ongoing" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes ongoing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="803" y="240" key="RollbackChangesDialog" timestamp="1641272927279">
