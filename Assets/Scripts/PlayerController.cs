@@ -55,9 +55,11 @@ public class PlayerController : MonoBehaviour
 		
 		for (int i = 1; i <= totalBounces; i++)
 		{
-			Physics.Raycast(rayOrigin, direction,out hit,Mathf.Infinity);
-			Debug.DrawLine(rayOrigin,hit.point);
-				
+			//Physics.Raycast(rayOrigin, direction,out hit,Mathf.Infinity);
+			//Debug.DrawLine(rayOrigin,hit.point);
+			
+			if (!Physics.Raycast(rayOrigin, direction, out hit,50f)) return;
+			
 			if (hit.transform.CompareTag("Mirror"))
 			{
 				direction = Vector3.Reflect(direction.normalized, hit.normal);
@@ -66,12 +68,13 @@ public class PlayerController : MonoBehaviour
 
 				colliedObjects.Add(hit.collider.gameObject);
 			}
-			else
+			else if (hit.collider.CompareTag("Player") || hit.collider.CompareTag("BoundingBox") || hit.collider.CompareTag("Enemy"))
 			{
+				Debug.DrawLine(rayOrigin,hit.point);
 				_lineRenderer.SetPosition(i,hit.point);
 			}
 		}
-
+		
 		if (Input.GetKeyDown(KeyCode.A))
 		{
 			for (int j = 0; j < _lineRenderer.positionCount; j++)
